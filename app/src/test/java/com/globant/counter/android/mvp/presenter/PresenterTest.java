@@ -1,7 +1,7 @@
 package com.globant.counter.android.mvp.presenter;
 
 import com.globant.counter.android.mvp.model.CountModel;
-import com.globant.counter.android.mvp.view.CountView;
+import com.globant.counter.android.mvp.view.CalculatorView;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -21,14 +21,14 @@ import static org.mockito.Mockito.verifyNoMoreInteractions;
  */
 public class PresenterTest {
 
-    private CountPresenter presenter;
+    private CalculatorPresenter presenter;
     @Mock CountModel model;
-    @Mock CountView view;
+    @Mock CalculatorView view;
 
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
-        presenter = new CountPresenter(model, view);
+        presenter = new CalculatorPresenter(model, view);
     }
 
     @Test

@@ -3,4 +3,17 @@
     <string name="intial_value">0</string>
     <string name="inc">inc</string>
     <string name="reset">reset</string>
+    <string name="title_solve">Solve operation</string>
+
+    <string name="operation_error_invalid_format">Invalid format</string>
+
+    <string name="msj_sum_correct_format">Correct input format i+n+j....+k=</string>
+    <string name="msj_subtraction_correct_format">Correct input format i-n-j....-k=</string>
+    <string name="msj_division_correct_format">Correct input format i/k=</string>
+    <string name="msj_multiplication_correct_format">Correct input format i*n*j....*k=</string>
+    <string name="msj_module_correct_format">Correct input format i%k=</string>
+
+    <string name="msj_operation_invite">Enter an operation to solve.</string>
+
+    <string name="error_unknown_operation">Unknown operation</string>
 </resources>

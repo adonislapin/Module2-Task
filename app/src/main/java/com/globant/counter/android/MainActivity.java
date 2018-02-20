@@ -4,18 +4,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.globant.counter.android.mvp.model.CountModel;
-import com.globant.counter.android.mvp.presenter.CountPresenter;
-import com.globant.counter.android.mvp.view.CountView;
+import com.globant.counter.android.mvp.model.SumModel;
+import com.globant.counter.android.mvp.presenter.CalculatorPresenter;
+import com.globant.counter.android.mvp.view.CalculatorView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private CountPresenter presenter;
+    private CalculatorPresenter presenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        presenter = new CountPresenter(new CountModel(), new CountView(this));
+        presenter = new CalculatorPresenter(new CountModel(), new CalculatorView(this), new SumModel());
     }
 
     @Override

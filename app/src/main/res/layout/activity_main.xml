@@ -3,27 +3,21 @@
     android:id="@+id/activity_main"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/count_label"
-        android:layout_width="wrap_content"
-        android:textSize="@dimen/activity_main_text_size"
-        android:layout_height="wrap_content"
-        android:text="@string/intial_value"/>
+    <EditText
+      android:id="@+id/edit_input_data"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_margin="@dimen/activity_horizontal_margin"
+      android:hint="@string/msj_operation_invite"/>
 
     <Button
-        android:id="@+id/count_button"
+        android:id="@+id/button_solve"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/inc"/>
-
-    <Button
-        android:id="@+id/reset_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reset"/>
+        android:text="@string/title_solve"/>
 
 </LinearLayout>
