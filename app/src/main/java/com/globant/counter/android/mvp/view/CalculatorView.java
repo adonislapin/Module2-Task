@@ -27,6 +27,10 @@ public class CalculatorView extends ActivityView {
         inputData.setText(result);
     }
 
+    public EditText getInputData() {
+        return inputData;
+    }
+
     @OnClick(R.id.button_solve)
     public void countButtonPressed() {
         SolveOperationButtonObserver.SolveOperationButton operationButton = new SolveOperationButtonObserver.SolveOperationButton();

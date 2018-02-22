@@ -40,7 +40,6 @@ public class RegexUtil {
         ArrayList<Double> newData = new ArrayList<>();
         for(String string : temp){
             if(string.matches(VALID_NUMER_REGEX)){
-                Log.d("XXXXXXXXX", "cosa:" + string);
                 newData.add(Double.valueOf(string+"D"));
             }
         }
