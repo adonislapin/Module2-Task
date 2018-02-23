@@ -28,7 +28,10 @@ public class PresenterTest {
     @Before
     public void setup() {
         MockitoAnnotations.initMocks(this);
+<<<<<<< Updated upstream
         presenter = new CountPresenter(model, view);
+=======
+>>>>>>> Stashed changes
     }
 
     @Test
